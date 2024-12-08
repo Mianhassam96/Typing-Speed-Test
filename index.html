@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test - MultiMian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>MultiMian Typing Speed Test Site</h1>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About MultiMian Typing Speed Test</h2>
+    <p>
+      Welcome to the MultiMian Typing Speed Test, a tool designed to help you evaluate and improve your typing skills. Whether you are a beginner looking to increase your speed or an experienced typist aiming to improve your accuracy, our typing test provides a simple, intuitive way to track your progress.
+    </p>
+    <p>
+      This platform randomly selects sentences for you to type, giving you a 60-second timer to type as accurately and quickly as possible. At the end of the test, you’ll get a detailed summary of your Words Per Minute (WPM), accuracy percentage, and the time spent typing. Use this information to continuously improve and challenge yourself.
+    </p>
+    <p>
+      Built with passion by MultiMian, this tool is part of our commitment to making learning and self-improvement accessible for everyone. 
+    </p>
+    <p>
+      We hope you enjoy using the tool, and wish you the best of luck on your typing journey!
+    </p>
+  </section>
+  
+  <!-- Typing Test Container -->
+  <div class="container">
+    <div id="text-box">
+      <p id="display-text"></p>
+    </div>
+    <textarea id="input-box" placeholder="Start typing here..." oninput="checkInput()" disabled></textarea>
+    
+    <button id="start-btn" onclick="startTest()">Start Test</button>
+    <button id="pause-btn" onclick="pauseTest()" disabled>Pause Test</button>
+    
+    <div id="result" class="hidden">
+      <p><strong>Time Left:</strong> <span id="time-left">60</span> seconds</p>
+      <p><strong>Words per Minute (WPM):</strong> <span id="wpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracy">0%</span></p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 MultiMian. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

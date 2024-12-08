@@ -1,0 +1,115 @@
+/* Add this to your existing CSS */
+
+html, body {
+  height: 100%; /* Ensure body takes the full height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.container {
+  flex: 1; /* Allow container to grow and fill the available space */
+}
+
+/* Existing CSS */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fcfffc;
+}
+
+header {
+  background-color: #050374;
+  color: white;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#about {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(245, 238, 238);
+}
+
+#about h2 {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #080707;
+  margin-bottom: 15px;
+}
+
+.container {
+  padding: 20px;
+  flex: 1; /* Allow this to take available space */
+}
+
+#text-box {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #020202;
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+#display-text {
+  font-size: 18px;
+}
+
+#input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: rgb(3, 12, 128);
+  color: white;
+  border-radius: 30px;
+}
+button:hover{
+background-color: #050374;
+}
+
+.hidden {
+  display: none;
+}
+
+#result p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #08016b;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
